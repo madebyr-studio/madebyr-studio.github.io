@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23222021'/%3E%3Ccircle cx='22' cy='21' r='4' fill='%23FA6534'/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مستشار العطور — مشروع خاص · made by r.&lrm;</title>
+<meta name="description" content="مستشار محادثة يفهم أسئلة العطور الطبيعية ويقترح عطورًا ويشرح سبب كل اقتراح. عرض توضيحي بمحادثات مسجّلة.">
+<meta name="theme-color" content="#1E1A1D">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;600&family=Poppins:wght@900&family=IBM+Plex+Mono:wght@500&family=El+Messiri:wght@600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Marcellus&display=swap">
+<link rel="stylesheet" href="../../assets/mbr.css">
+<style>
+body{background:#1E1A1D;color:#F5EFE6;font-family:'Noto Naskh Arabic',serif}
+html[lang="en"] body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif}
+:focus-visible{outline-color:#C8963E}
+.studio{background:var(--cream);color:var(--ink);font-family:var(--text)}
+.studio-in{display:flex;align-items:center;gap:20px;min-height:60px;flex-wrap:wrap}
+.back{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;font-size:15px;text-decoration:none}
+.back:hover{text-decoration:underline}
+html[dir="ltr"] .back [aria-hidden]{display:inline-block;transform:scaleX(-1)}
+.pf-display{font-family:'El Messiri',serif;font-weight:700;line-height:1.4}
+html[lang="en"] .pf-display{font-family:'Marcellus',serif;font-weight:400;line-height:1.15}
+.amber{color:#C8963E}
+.muted{color:#E6DCCD}
+.sec{padding-block:112px}
+.alt{background:#151214}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center;padding-block:88px 112px}
+.meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 32px;margin:0;padding-top:26px;border-top:1px solid rgba(245,239,230,.2)}
+.meta dt{font-size:13px;color:#C8963E}.meta dd{margin:4px 0 0;font-size:16px;line-height:1.6}
+.private{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid rgba(200,150,62,.6);border-radius:4px;font-size:15px;line-height:1.75}
+.private svg{flex:none;margin-top:3px}
+/* device */
+.device{position:relative;width:380px;height:780px;margin-inline:auto;padding:14px;border-radius:54px;background:linear-gradient(145deg,#3A3236,#120F11);box-shadow:0 40px 80px rgba(0,0,0,.55),inset 0 0 0 1.5px rgba(245,239,230,.14)}
+.device::before{content:"";position:absolute;inset-inline-end:-3px;top:170px;width:3px;height:84px;border-radius:2px;background:#2A2427}
+.screen{position:relative;height:100%;border-radius:42px;background:#151214;overflow:hidden;display:flex;flex-direction:column}
+.island{position:absolute;left:50%;top:12px;width:104px;height:30px;margin-left:-52px;border-radius:16px;background:#000}
+.app-top{display:flex;align-items:center;gap:12px;padding:58px 18px 12px;border-bottom:1px solid rgba(245,239,230,.1)}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#2E272B;border:1px solid rgba(200,150,62,.6)}
+.log{flex:1;min-height:0;overflow:hidden;padding:16px 14px 8px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px}
+.m-user{align-self:flex-end;max-width:84%;padding:9px 13px;background:#C8963E;color:#1E1A1D;border-radius:18px 18px 18px 4px;font-size:14.5px;line-height:1.65;animation:up .35s both}
+.m-bot{display:flex;flex-direction:column;gap:9px;animation:up .4s both}
+.m-text{margin:0;font-size:14.5px;line-height:1.8}
+.tags{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.tags-h{font-size:11.5px;color:#D9B8B0}
+.tg{display:inline-flex;align-items:center;height:24px;padding:0 8px;border:1px solid rgba(217,184,176,.55);border-radius:12px;font-size:11.5px}
+.cards{display:flex;gap:9px;overflow:hidden}
+.card{flex:0 0 232px;background:#F5EFE6;color:#1E1A1D;border-radius:6px;padding:12px 13px;display:flex;flex-direction:column;gap:8px;animation:up .45s both}
+.card+.card{animation-delay:.12s}
+.card-h{display:grid;grid-template-columns:26px minmax(0,1fr);gap:10px;align-items:center}
+.bottle{position:relative;width:22px;height:36px;border-radius:5px 5px 8px 8px;border:1.5px solid #1E1A1D;margin-top:7px}
+.bottle::before{content:"";position:absolute;left:50%;top:-8px;width:10px;height:7px;margin-left:-5px;background:#1E1A1D;border-radius:2px}
+.c-name{display:block;font-family:'El Messiri',serif;font-weight:700;font-size:18px;line-height:1.35}
+.c-fam{display:block;font-size:11.5px;color:#6E4F1F}
+.pyr{margin:0;display:grid;gap:3px;font-size:12px;line-height:1.5}
+.pyr div{display:grid;grid-template-columns:38px minmax(0,1fr);gap:6px}
+.pyr dt{color:#6E4F1F;font-weight:600}.pyr dd{margin:0}
+.c-why{margin:0;padding-top:7px;border-top:1px solid rgba(30,26,29,.15);font-size:12px;line-height:1.65;color:#4A3F3B}
+.c-tag{align-self:flex-start;padding:0 6px;border:1px dashed #6E4F1F;font-size:10.5px;color:#6E4F1F}
+.note{margin:0;padding:7px 9px;border-inline-start:2px solid #C8963E;font-size:12px;line-height:1.7;color:#E6DCCD}
+.typing{align-self:flex-start;display:inline-flex;gap:5px;padding:10px 2px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#F5EFE6;opacity:.35;animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.composer{display:flex;gap:8px;align-items:center;padding:10px 12px 22px}
+.fake-input{flex:1;min-width:0;height:44px;padding:0 14px;display:flex;align-items:center;border:1px solid rgba(245,239,230,.25);border-radius:22px;font-size:13.5px;color:#B5A99C;white-space:nowrap;overflow:hidden}
+.fake-input.typing-on{color:#F5EFE6}
+.caret{display:inline-block;width:1.5px;height:18px;margin-inline-start:2px;background:#C8963E;animation:blink 1s infinite}
+.fake-send{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:#C8963E;color:#1E1A1D}
+.rec{position:absolute;top:66px;inset-inline-end:16px;display:none}
+.controls{display:flex;flex-direction:column;gap:14px;max-width:440px;margin:22px auto 0}
+.scen{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.scen button{min-height:44px;padding:0 14px;border:1px solid rgba(245,239,230,.4);border-radius:22px;background:transparent;color:#F5EFE6;font-size:14px;cursor:pointer}
+.scen button[aria-pressed="true"]{background:#F5EFE6;color:#1E1A1D;border-color:#F5EFE6}
+.ctl{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;color:#BFB3A6;text-align:center}
+.ctl button{min-height:44px;padding:0 16px;display:inline-flex;align-items:center;gap:8px;border:1px solid #C8963E;border-radius:22px;background:transparent;color:#F5EFE6;cursor:pointer;font-size:14px}
+.ctl button:hover{background:#C8963E;color:#1E1A1D}
+.label-rec{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#D9B8B0}
+.label-rec i{width:8px;height:8px;border-radius:50%;background:#C8963E}
+/* wheel + lists */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr));gap:72px;align-items:center}
+.dims{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}
+.dim-btn{width:100%;min-height:56px;display:flex;align-items:center;gap:12px;padding:8px 0;border:0;border-bottom:1px solid rgba(245,239,230,.15);background:transparent;color:#F5EFE6;font-size:17px;text-align:start;cursor:pointer}
+.dim-btn .n{font-family:'El Messiri',serif;color:#C8963E;min-width:26px}
+.dim-btn[aria-pressed="true"]{color:#C8963E}
+.seg{transition:fill .25s}
+.pin{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#C8963E;color:#1E1A1D;font-family:'El Messiri',serif;font-weight:700;font-size:14px;flex:none}
+.qlist{list-style:none;margin:0;padding:0;border-top:1px solid rgba(245,239,230,.2)}
+.qlist li{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(245,239,230,.2)}
+.qlist q{font-family:'El Messiri',serif;font-weight:600;font-size:22px;line-height:1.6;quotes:"«" "»"}
+.play-btn{min-height:44px;padding:0 14px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,239,230,.4);border-radius:22px;background:transparent;color:#F5EFE6;font-size:14px;cursor:pointer;white-space:nowrap}
+.play-btn:hover{border-color:#C8963E;color:#C8963E}
+.no-rec{font-size:13px;color:#BFB3A6;white-space:nowrap}
+@keyframes up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes blink{50%{opacity:1}}
+@media (max-width:980px){.hero{grid-template-columns:minmax(0,1fr);gap:48px;padding-block:56px 80px}.qlist li{grid-template-columns:minmax(0,1fr)}.dims{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:440px){.device{width:100%;max-width:340px;height:700px;border-radius:46px;padding:11px}.screen{border-radius:36px}.card{flex-basis:210px}.meta{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+<header class="studio">
+<div class="wrap studio-in">
+<a class="mark" href="../../index.html" aria-label="made by r.">made by r<i></i></a>
+<a class="back" href="../../index.html#work"><span aria-hidden="true">→</span><span data-i18n="back">العودة إلى الأعمال</span></a>
+<div class="lang" role="group" aria-label="اللغة / Language" style="margin-inline-start:auto"><button type="button" class="l-ar" data-set-lang="ar" lang="ar" aria-pressed="true">عربي</button><button type="button" class="l-en" data-set-lang="en" lang="en" aria-pressed="false">EN</button></div>
+</div>
+</header>
+<main id="main">
+<section class="wrap hero" aria-labelledby="pf-h">
+<div style="display:flex;flex-direction:column;gap:26px">
+<p class="amber" style="margin:0;font-size:15px;font-weight:600" data-i18n="eyebrow">دراسة حالة · ذكاء اصطناعي · مشروع خاص</p>
+<h1 class="pf-display" id="pf-h" style="margin:0;font-size:clamp(44px,5.6vw,84px)" data-i18n="h1">اسأل عن العطر كما تسأل صديقًا.</h1>
+<p class="muted" style="margin:0;max-width:600px;font-size:20px;line-height:1.95" data-i18n="lede">مستشار محادثة يفهم أسئلة العطور كما يقولها الناس — المناسبة، والموسم، والمكوّنات، والتشابه مع عطر يحبونه — ثم يقترح خيارات، ويشرح سبب كل اقتراح.</p>
+<dl class="meta">
+<div><dt data-i18n="mRoleT">الدور</dt><dd data-i18n="mRole">تصميم وتطوير</dd></div>
+<div><dt data-i18n="mTypeT">النوع</dt><dd data-i18n="mType">مستشار محادثة لاكتشاف العطور</dd></div>
+<div><dt data-i18n="mLangT">اللغة</dt><dd data-i18n="mLang">العربية أولًا، باللهجة اليومية</dd></div>
+<div><dt data-i18n="mAccessT">الوصول</dt><dd data-i18n="mAccess">مشروع خاص — غير متاح للعامة</dd></div>
+</dl>
+<div class="private"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="#C8963E" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#C8963E" stroke-width="1.8"/></svg><span data-i18n="privateNote">المستشار الحقيقي يعمل بخدمة ذكاء اصطناعي مدفوعة، لذلك يبقى خاصًا. كل ما في هذه الصفحة محادثات مسجّلة ومنتجات توضيحية مُعدّة مسبقًا، ولا يتصل بالمستشار.</span></div>
+</div>
+<div>
+<div class="device" role="region" data-i18n-attr="aria-label:deviceLabel" aria-label="عرض مسجّل لمحادثة مع مستشار العطور">
+<div class="screen" dir="rtl" lang="ar">
+<span class="island" aria-hidden="true"></span>
+<div class="app-top"><span class="avatar" aria-hidden="true"><svg viewBox="-50 -50 100 100" width="18" height="18"><path d="M0 -40 L9 -9 L40 0 L9 9 L0 40 L-9 9 L-40 0 L-9 -9 Z" fill="#C8963E"/></svg></span><span style="flex:1;display:flex;flex-direction:column"><span style="font-family:'El Messiri',serif;font-weight:700;font-size:17px;line-height:1.3">مستشار العطور</span><span style="font-size:11.5px;color:#D9B8B0">عرض توضيحي مسجّل</span></span></div>
+<div class="log" id="log" aria-live="polite"></div>
+<div class="composer" aria-hidden="true"><span class="fake-input" id="fake">اكتب سؤالك عن العطر…</span><span class="fake-send"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+</div>
+</div>
+<div class="controls">
+<div class="scen" role="group" data-i18n-attr="aria-label:scenLabel" aria-label="اختر مثالًا لتشغيله" id="scen">
+<button type="button" data-s="0" aria-pressed="true">صباحي للدوام</button>
+<button type="button" data-s="1" aria-pressed="false">يشبه بلاك أوبيوم</button>
+<button type="button" data-s="2" aria-pressed="false">مناسبة مسائية</button>
+<button type="button" data-s="3" aria-pressed="false">بديل بسعر أقل</button>
+</div>
+<div class="ctl"><button type="button" id="replay"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="replay">أعد التشغيل</span></button><span class="label-rec"><i aria-hidden="true"></i><span data-i18n="recLabel">تسجيل توضيحي · ليس متصلًا بالمستشار</span></span></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt" aria-labelledby="dims-h">
+<div class="wrap two">
+<div style="display:flex;flex-direction:column;gap:22px">
+<p class="amber" style="margin:0;font-size:15px;font-weight:600" data-i18n="dimsEyebrow">ما الذي يفهمه</p>
+<h2 class="pf-display" id="dims-h" style="margin:0;font-size:clamp(34px,3.8vw,56px)" data-i18n="dimsH">سؤال واحد، ثماني زوايا.</h2>
+<p class="muted" style="margin:0;max-width:560px;font-size:18px;line-height:1.9" data-i18n="dimsP">لا يحتاج العميل إلى مصطلحات العطور. يقرأ المستشار جملته اليومية ويستخرج منها ما يهمّ: متى، وأين، وما الذي يحبه.</p>
+<ul class="dims" id="dims">
+<li><button type="button" class="dim-btn" data-d="0" aria-pressed="true"><span class="n">١</span><span data-i18n="d1">المناسبة</span></button></li>
+<li><button type="button" class="dim-btn" data-d="1" aria-pressed="false"><span class="n">٢</span><span data-i18n="d2">الموسم</span></button></li>
+<li><button type="button" class="dim-btn" data-d="2" aria-pressed="false"><span class="n">٣</span><span data-i18n="d3">العائلة العطرية</span></button></li>
+<li><button type="button" class="dim-btn" data-d="3" aria-pressed="false"><span class="n">٤</span><span data-i18n="d4">المكوّنات</span></button></li>
+<li><button type="button" class="dim-btn" data-d="4" aria-pressed="false"><span class="n">٥</span><span data-i18n="d5">التشابه مع عطر آخر</span></button></li>
+<li><button type="button" class="dim-btn" data-d="5" aria-pressed="false"><span class="n">٦</span><span data-i18n="d6">الميزانية</span></button></li>
+<li><button type="button" class="dim-btn" data-d="6" aria-pressed="false"><span class="n">٧</span><span data-i18n="d7">قوة الفوحان</span></button></li>
+<li><button type="button" class="dim-btn" data-d="7" aria-pressed="false"><span class="n">٨</span><span data-i18n="d8">نهارًا أو مساءً</span></button></li>
+</ul>
+<p class="pf-display amber" id="dimEx" aria-live="polite" dir="rtl" lang="ar" style="margin:8px 0 0;font-size:28px">«عندي مناسبة مسائية»</p>
+</div>
+<svg id="wheel" viewBox="0 0 400 400" role="img" data-i18n-attr="aria-label:wheelLabel" aria-label="عجلة توضّح الزوايا الثماني التي يقرأها المستشار في السؤال" style="width:100%;max-width:500px;justify-self:center;overflow:visible"></svg>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="anat-h">
+<div class="wrap two">
+<div style="display:flex;flex-direction:column;gap:22px">
+<p class="amber" style="margin:0;font-size:15px;font-weight:600" data-i18n="anatEyebrow">كيف يشرح الاقتراح</p>
+<h2 class="pf-display" id="anat-h" style="margin:0;font-size:clamp(34px,3.8vw,56px)" data-i18n="anatH">كل اقتراح يأتي مع سببه.</h2>
+<ol style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:20px">
+<li style="display:flex;gap:14px"><span class="pin">١</span><span style="font-size:17px;line-height:1.85" data-i18n="a1" data-i18n-html=""><b>الاسم والعائلة العطرية</b> — ليعرف العميل نوع العطر من النظرة الأولى.</span></li>
+<li style="display:flex;gap:14px"><span class="pin">٢</span><span style="font-size:17px;line-height:1.85" data-i18n="a2" data-i18n-html=""><b>الهرم العطري</b> — القمة والقلب والقاعدة، بكلمات بسيطة.</span></li>
+<li style="display:flex;gap:14px"><span class="pin">٣</span><span style="font-size:17px;line-height:1.85" data-i18n="a3" data-i18n-html=""><b>لماذا يناسبك</b> — يربط كلمات السؤال بمكوّنات العطر نفسها.</span></li>
+<li style="display:flex;gap:14px"><span class="pin">٤</span><span style="font-size:17px;line-height:1.85" data-i18n="a4" data-i18n-html=""><b>الصدق في التشابه</b> — حين يقارن بعطر معروف، يشرح المكوّنات المشتركة ولا يدّعي نسبة تشابه.</span></li>
+</ol>
+</div>
+<div style="position:relative;justify-self:center;width:100%;max-width:420px" dir="rtl" lang="ar">
+<article class="card" style="width:100%;padding:26px 28px;gap:16px;animation:none">
+<div class="card-h" style="grid-template-columns:40px minmax(0,1fr)"><span class="bottle" aria-hidden="true" style="width:34px;height:54px;background:#E9D88A"></span><span><span class="c-name" style="font-size:28px">نسيم الصباح</span><span class="c-fam" style="font-size:14px">حمضي منعش · فوحان خفيف</span></span></div>
+<dl class="pyr" style="font-size:15px;gap:5px"><div style="grid-template-columns:48px minmax(0,1fr)"><dt>قمة</dt><dd>برغموت، ليمون</dd></div><div style="grid-template-columns:48px minmax(0,1fr)"><dt>قلب</dt><dd>شاي أبيض</dd></div><div style="grid-template-columns:48px minmax(0,1fr)"><dt>قاعدة</dt><dd>مسك نظيف</dd></div></dl>
+<p class="c-why" style="font-size:15px"><b>لماذا يناسبك: </b>طلبت عطرًا <u>صباحيًا</u> و<u>منعشًا</u> لـ<u>الدوام</u>؛ الحمضيات تعطي الانتعاش، والمسك النظيف يبقيه هادئًا في المكتب.</p>
+<span class="c-tag" style="font-size:12px">منتج توضيحي</span>
+</article>
+<span class="pin" style="position:absolute;top:24px;left:-14px">١</span>
+<span class="pin" style="position:absolute;top:122px;left:-14px">٢</span>
+<span class="pin" style="position:absolute;top:218px;left:-14px">٣</span>
+</div>
+</div>
+</section>
+
+<section class="sec alt" aria-labelledby="q-h">
+<div class="wrap">
+<div style="display:flex;flex-direction:column;gap:18px;max-width:760px;margin-bottom:40px">
+<p class="amber" style="margin:0;font-size:15px;font-weight:600" data-i18n="qEyebrow">أمثلة على الأسئلة</p>
+<h2 class="pf-display" id="q-h" style="margin:0;font-size:clamp(34px,3.8vw,56px)" data-i18n="qH">كما يكتبها العملاء فعلًا.</h2>
+<p class="muted" style="margin:0;font-size:18px;line-height:1.9" data-i18n="qP">أسئلة بلهجة يومية، وما يلتقطه المستشار من كل منها. أربعة منها مسجّلة في العرض أعلاه.</p>
+</div>
+<ul class="qlist" dir="rtl" lang="ar">
+<li><q>أبي عطر يشبه عطر بلاك أوبيوم.</q><span class="tags"><span class="tg">التشابه</span><span class="tg">قهوة · فانيلا · زهور بيضاء</span></span><button type="button" class="play-btn" data-play="1">▶ <span data-i18n="watch">شاهد التسجيل</span></button></li>
+<li><q>أبي عطر صباحي خفيف.</q><span class="tags"><span class="tg">الوقت: صباحًا</span><span class="tg">القوة: خفيفة</span></span><span class="no-rec" data-i18n="noRec">بلا تسجيل</span></li>
+<li><q>وش أفضل عطر للصيف؟</q><span class="tags"><span class="tg">الموسم: الصيف</span><span class="tg">العائلة: منعشة ومائية</span></span><span class="no-rec" data-i18n="noRec">بلا تسجيل</span></li>
+<li><q>أبي عطر ناعم للدوام.</q><span class="tags"><span class="tg">المناسبة: الدوام</span><span class="tg">الطابع: ناعم</span></span><span class="no-rec" data-i18n="noRec">بلا تسجيل</span></li>
+<li><q>عندي مناسبة مسائية، وش تقترح؟</q><span class="tags"><span class="tg">الوقت: مساءً</span><span class="tg">القوة: واضحة</span></span><button type="button" class="play-btn" data-play="2">▶ <span data-i18n="watch">شاهد التسجيل</span></button></li>
+<li><q>أبي عطر فيه فانيلا ومسك.</q><span class="tags"><span class="tg">المكوّنات: فانيلا، مسك</span></span><span class="no-rec" data-i18n="noRec">بلا تسجيل</span></li>
+<li><q>أبي عطر يشبه عطري المفضل لكن بسعر أقل.</q><span class="tags"><span class="tg">التشابه</span><span class="tg">الميزانية: أقل</span></span><button type="button" class="play-btn" data-play="3">▶ <span data-i18n="watch">شاهد التسجيل</span></button></li>
+</ul>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="why-h">
+<div class="wrap two" style="align-items:start">
+<div style="display:flex;flex-direction:column;gap:18px">
+<p class="amber" style="margin:0;font-size:15px;font-weight:600" data-i18n="whyEyebrow">لماذا هو خاص</p>
+<h2 class="pf-display" id="why-h" style="margin:0;font-size:clamp(32px,3.4vw,50px)" data-i18n="whyH">عرض يحكي القيمة، دون أن يفتح الباب.</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px;font-size:18px;line-height:1.95">
+<p class="muted" style="margin:0" data-i18n="why1">يعمل المستشار الحقيقي بخدمة ذكاء اصطناعي تُحتسب تكلفتها مع كل سؤال، ويستند إلى بيانات منتجات خاصة. لذلك لا نتيحه للعامة.</p>
+<p class="muted" style="margin:0" data-i18n="why2">هذه الصفحة تعمل بالكامل على بيانات محلية مُعدّة مسبقًا: لا اتصال بالمستشار، ولا مفاتيح، ولا طلبات، ولا تكلفة. المنتجات المعروضة توضيحية، وأُزيلت منها الأسعار.</p>
+<a class="btn-ivory" href="../../index.html#start" style="align-self:flex-start;margin-top:8px"><span data-i18n="demoReq">اطلب عرضًا مباشرًا</span><svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+</div>
+</section>
+<nav class="wrap" data-i18n-attr="aria-label:moreNav" aria-label="المزيد من الأعمال" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-block:56px 72px;border-top:1px solid rgba(245,239,230,.2)">
+<a class="back" href="../../index.html#work" style="color:#F5EFE6"><span aria-hidden="true">→</span><span data-i18n="back">العودة إلى الأعمال</span></a>
+<a class="back" href="../qishr/index.html" style="color:#F5EFE6;font-size:18px"><span data-i18n="next">المشروع التالي: قِشر</span><span aria-hidden="true">←</span></a>
+</nav>
+</main>
+<script src="../../assets/i18n.js"></script>
+<script>
+(function () {
+  I18N.init({ key: 'mbr-lang', en: {
+    __title: 'Perfume advisor — private project · made by r.', skip: 'Skip to content', back: 'Back to work',
+    eyebrow: 'Case study · AI · private project', h1: 'Ask about perfume the way you would ask a friend.',
+    lede: 'A chat advisor that understands perfume questions the way people actually ask them — occasion, season, notes, and similarity to a scent they love — then suggests options and explains why each one fits.',
+    mRoleT: 'Role', mRole: 'Design and development', mTypeT: 'Type', mType: 'Chat advisor for perfume discovery', mLangT: 'Language', mLang: 'Arabic first, in everyday dialect', mAccessT: 'Access', mAccess: 'Private project — not open to the public',
+    privateNote: 'The real advisor runs on a paid AI service, so it stays private. Everything on this page is recorded conversations and illustrative products prepared in advance. Nothing here connects to the advisor.',
+    deviceLabel: 'Recorded conversation with the perfume advisor', scenLabel: 'Choose an example to play', replay: 'Replay', recLabel: 'Illustrative recording · not connected to the advisor',
+    dimsEyebrow: 'What it understands', dimsH: 'One question, eight angles.', dimsP: 'Shoppers do not need perfume vocabulary. The advisor reads their everyday sentence and pulls out what matters: when, where, and what they like.',
+    d1: 'Occasion', d2: 'Season', d3: 'Scent family', d4: 'Notes', d5: 'Similarity to another perfume', d6: 'Budget', d7: 'Intensity', d8: 'Day or evening',
+    wheelLabel: 'Wheel showing the eight angles the advisor reads in a question',
+    anatEyebrow: 'How a recommendation explains itself', anatH: 'Every suggestion comes with its reason.',
+    a1: '<b>Name and scent family</b> — so the shopper knows the type of perfume at a glance.', a2: '<b>The fragrance pyramid</b> — top, heart and base notes, in plain words.',
+    a3: '<b>Why it suits you</b> — it links the words of the question to the perfume’s own notes.', a4: '<b>Honest similarity</b> — when comparing with a known perfume, it explains the shared notes and never claims a similarity score.',
+    qEyebrow: 'Example questions', qH: 'Written the way shoppers actually write.', qP: 'Everyday-dialect questions, and what the advisor picks up from each. Four of them are recorded in the demo above.',
+    watch: 'Watch recording', noRec: 'No recording',
+    whyEyebrow: 'Why it is private', whyH: 'A showcase that tells the value, without opening the door.',
+    why1: 'The real advisor runs on an AI service that costs money with every question, and it draws on private product data. So it is not open to the public.',
+    why2: 'This page runs entirely on local data prepared in advance: no connection to the advisor, no keys, no requests and no cost. The products shown are illustrative, with prices removed.',
+    demoReq: 'Request a live demo', moreNav: 'More work', next: 'Next project: Qishr'
+  }});
+
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var P = {
+    p1: ['نسيم الصباح', 'حمضي منعش · فوحان خفيف', 'برغموت، ليمون', 'شاي أبيض', 'مسك نظيف', '#E9D88A'],
+    p2: ['ورق التين', 'أخضر · فوحان خفيف إلى معتدل', 'ورق تين', 'ليمون أخضر، نعناع', 'خشب الأرز', '#A9B98B'],
+    p5: ['مخمل المساء', 'مسكي دافئ · فوحان معتدل', 'فلفل وردي', 'فانيلا، زهر البرتقال', 'مسك، صندل', '#D9B8B0'],
+    p6: ['ليل العود', 'عودي · فوحان قوي', 'زعفران', 'ورد طائفي', 'عود، عنبر', '#4A2C2A'],
+    p7: ['سهرة الياسمين', 'زهري دافئ · فوحان واضح', 'إجاص', 'ياسمين', 'باتشولي، فانيلا', '#C99A9E'],
+    p8: ['بنّ وزهر', 'شرقي زهري · فوحان واضح', 'فلفل وردي، إجاص', 'قهوة، ياسمين، زهر البرتقال', 'فانيلا، باتشولي', '#6B4A3A']
+  };
+  /* Each scenario is a scripted sequence: u = user message, b = advisor message. */
+  var S = [
+    [{ u: 'أبي عطر صباحي منعش ومناسب للدوام.' }, { b: 'للصباح والدوام أنصحك بعطور حمضية أو خضراء، فوحانها هادئ فلا تزعج من حولك في المكتب.', tags: ['الوقت: صباحًا', 'المناسبة: الدوام', 'القوة: خفيفة'], cards: [['p1', 'الحمضيات والشاي الأبيض تعطي انتعاشًا نظيفًا، وفوحانه خفيف يناسب المكتب.'], ['p2', 'منعش وأخضر دون حدّة، ويبقى قريبًا من البشرة.']] }],
+    [{ u: 'أبي عطر يشبه عطر بلاك أوبيوم.' }, { b: 'يُعرف «بلاك أوبيوم» بمزيج القهوة والفانيلا والزهور البيضاء. هذه خيارات بملامح قريبة:', tags: ['يشبه: بلاك أوبيوم', 'الملامح: قهوة، فانيلا، زهور بيضاء'], cards: [['p8', 'يجمع القهوة والياسمين وزهر البرتقال على قاعدة فانيلا.'], ['p5', 'فانيلا وزهر البرتقال، أنعم وبلا قهوة.']], note: 'التشابه مبني على المكوّنات المعلنة، وليس نسبة تشابه.' }],
+    [{ u: 'عندي مناسبة مسائية، وش تقترح؟' }, { b: 'للمناسبات المسائية أقترح عطورًا أعمق، حضورها أوضح.', tags: ['الوقت: مساءً', 'المناسبة: مناسبة خاصة', 'القوة: واضحة'], cards: [['p6', 'زعفران وورد طائفي على قاعدة عود: فخم ودافئ للمساء.'], ['p7', 'ياسمين على قاعدة باتشولي وفانيلا: أنيق وواضح.']] }],
+    [{ u: 'أبي عطر يشبه عطري المفضل لكن بسعر أقل.' }, { b: 'أكيد. وش اسم عطرك المفضل؟', tags: ['يشبه: عطرك المفضل', 'الميزانية: أقل'] }, { u: 'بلاك أوبيوم.' }, { b: 'هذه خيارات بملامح القهوة والفانيلا والزهور البيضاء نفسها:', tags: ['يشبه: بلاك أوبيوم', 'الميزانية: أقل'], cards: [['p8', 'يجمع القهوة والياسمين وزهر البرتقال على قاعدة فانيلا.'], ['p5', 'فانيلا وزهر البرتقال، أنعم وبلا قهوة.']], note: 'حذفنا الأسعار من هذا العرض التوضيحي.' }]
+  ];
+  var log = document.getElementById('log'), fake = document.getElementById('fake'), timers = [], cur = 0, PH = fake.textContent;
+  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x !== undefined) n.textContent = x; return n; }
+  function stop() { timers.forEach(clearTimeout); timers = []; }
+  function at(ms, f) { timers.push(setTimeout(f, reduce ? 0 : ms)); }
+  function bot(m) {
+    var w = el('div', 'm-bot'); w.appendChild(el('p', 'm-text', m.b));
+    if (m.tags) { var t = el('div', 'tags'); t.appendChild(el('span', 'tags-h', 'فهمت من سؤالك:')); m.tags.forEach(function (x) { t.appendChild(el('span', 'tg', x)); }); w.appendChild(t); }
+    if (m.cards) {
+      var cs = el('div', 'cards');
+      m.cards.forEach(function (c) {
+        var p = P[c[0]], a = el('article', 'card'), h = el('div', 'card-h'), b = el('span', 'bottle'), nm = el('span');
+        b.style.background = p[5]; b.setAttribute('aria-hidden', 'true');
+        nm.appendChild(el('span', 'c-name', p[0])); nm.appendChild(el('span', 'c-fam', p[1])); h.appendChild(b); h.appendChild(nm); a.appendChild(h);
+        var dl = el('dl', 'pyr');
+        [['قمة', p[2]], ['قلب', p[3]], ['قاعدة', p[4]]].forEach(function (r) { var d = el('div'); d.appendChild(el('dt', '', r[0])); d.appendChild(el('dd', '', r[1])); dl.appendChild(d); });
+        a.appendChild(dl);
+        var why = el('p', 'c-why'); why.appendChild(el('b', '', 'لماذا يناسبك: ')); why.appendChild(document.createTextNode(c[1])); a.appendChild(why);
+        a.appendChild(el('span', 'c-tag', 'منتج توضيحي'));
+        cs.appendChild(a);
+      });
+      w.appendChild(cs);
+    }
+    if (m.note) w.appendChild(el('p', 'note', m.note));
+    return w;
+  }
+  function play(i) {
+    stop(); cur = i; log.textContent = ''; fake.textContent = PH; fake.classList.remove('typing-on');
+    document.querySelectorAll('#scen button').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.getAttribute('data-s') === i)); });
+    var t = 300;
+    S[i].forEach(function (m) {
+      if (m.u) {
+        var text = m.u, start = t;
+        at(start, function () { fake.textContent = ''; fake.classList.add('typing-on'); });
+        for (var k = 1; k <= text.length; k++) (function (k) { at(start + k * 38, function () { fake.textContent = text.slice(0, k); var c = el('span', 'caret'); fake.appendChild(c); }); })(k);
+        t = start + text.length * 38 + 350;
+        at(t, function () { fake.textContent = PH; fake.classList.remove('typing-on'); log.appendChild(el('p', 'm-user', text)); });
+        t += 300;
+      } else {
+        at(t, function () { var ty = el('span', 'typing'); ty.innerHTML = '<i></i><i></i><i></i><span class="sr-only">يكتب…</span>'; log.appendChild(ty); });
+        t += 1300;
+        at(t, function () { var ty = log.querySelector('.typing'); if (ty) ty.remove(); log.appendChild(bot(m)); });
+        t += 900;
+      }
+    });
+    if (reduce) { stop(); log.textContent = ''; S[i].forEach(function (m) { log.appendChild(m.u ? el('p', 'm-user', m.u) : bot(m)); }); }
+  }
+  document.querySelectorAll('#scen button').forEach(function (b) { b.addEventListener('click', function () { play(+b.getAttribute('data-s')); }); });
+  document.getElementById('replay').addEventListener('click', function () { play(cur); });
+  document.querySelectorAll('[data-play]').forEach(function (b) {
+    b.addEventListener('click', function () { document.querySelector('.device').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); play(+b.getAttribute('data-play')); });
+  });
+  var started = false;
+  if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting && !started) { started = true; play(0); } }); }, { threshold: 0.3 }).observe(document.querySelector('.device'));
+  else play(0);
+
+  /* wheel */
+  var D = ['عندي مناسبة مسائية', 'وش أفضل عطر للصيف؟', 'أبي شي زهري دافئ', 'فيه فانيلا ومسك', 'يشبه بلاك أوبيوم', 'بسعر أقل من عطري', 'أبي عطر ناعم للدوام', 'عطر صباحي خفيف'];
+  var SHORT = ['المناسبة', 'الموسم', 'العائلة', 'المكوّنات', 'التشابه', 'الميزانية', 'الفوحان', 'الوقت'];
+  var SHORT_EN = ['Occasion', 'Season', 'Family', 'Notes', 'Similar', 'Budget', 'Intensity', 'Time'];
+  var wheel = document.getElementById('wheel'), NS = 'http://www.w3.org/2000/svg', segs = [], labels = [], R = 186, r = 96;
+  function pt(rad, deg) { var a = deg * Math.PI / 180; return (200 + rad * Math.cos(a)).toFixed(2) + ' ' + (200 + rad * Math.sin(a)).toFixed(2); }
+  for (var i = 0; i < 8; i++) {
+    var a0 = -90 + i * 45 + 1.2, a1 = a0 + 42.6, am = (a0 + a1) / 2 * Math.PI / 180;
+    var path = document.createElementNS(NS, 'path');
+    path.setAttribute('d', 'M' + pt(R, a0) + ' A' + R + ' ' + R + ' 0 0 1 ' + pt(R, a1) + ' L' + pt(r, a1) + ' A' + r + ' ' + r + ' 0 0 0 ' + pt(r, a0) + ' Z');
+    path.setAttribute('class', 'seg'); path.setAttribute('stroke', '#C8963E'); path.setAttribute('stroke-width', '1');
+    var tx = document.createElementNS(NS, 'text');
+    tx.setAttribute('x', (200 + 141 * Math.cos(am)).toFixed(1)); tx.setAttribute('y', (200 + 141 * Math.sin(am)).toFixed(1));
+    tx.setAttribute('text-anchor', 'middle'); tx.setAttribute('dominant-baseline', 'middle'); tx.setAttribute('font-size', '13');
+    wheel.appendChild(path); wheel.appendChild(tx); segs.push(path); labels.push(tx);
+  }
+  var c = document.createElementNS(NS, 'circle'); c.setAttribute('cx', 200); c.setAttribute('cy', 200); c.setAttribute('r', 84); c.setAttribute('fill', '#1E1A1D'); c.setAttribute('stroke', '#C8963E'); wheel.appendChild(c);
+  var t1 = document.createElementNS(NS, 'text'); t1.setAttribute('x', 200); t1.setAttribute('y', 200); t1.setAttribute('text-anchor', 'middle'); t1.setAttribute('dominant-baseline', 'middle'); t1.setAttribute('fill', '#F5EFE6'); t1.setAttribute('font-size', '26'); t1.style.fontFamily = "'El Messiri',serif"; t1.style.fontWeight = '700'; wheel.appendChild(t1);
+  var dim = 0;
+  function setDim(i) {
+    dim = i;
+    segs.forEach(function (s, k) { s.setAttribute('fill', k === i ? '#C8963E' : '#1E1A1D'); });
+    labels.forEach(function (l, k) { l.setAttribute('fill', k === i ? '#1E1A1D' : '#F5EFE6'); l.textContent = I18N.lang() === 'en' ? SHORT_EN[k] : SHORT[k]; l.style.fontFamily = I18N.lang() === 'en' ? "'IBM Plex Sans Arabic',sans-serif" : "'Noto Naskh Arabic',serif"; });
+    t1.textContent = I18N.lang() === 'en' ? 'Question' : 'سؤالك';
+    document.querySelectorAll('.dim-btn').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.getAttribute('data-d') === i)); });
+    document.getElementById('dimEx').textContent = '«' + D[i] + '»';
+  }
+  document.querySelectorAll('.dim-btn').forEach(function (b) {
+    var f = function () { setDim(+b.getAttribute('data-d')); };
+    b.addEventListener('click', f); b.addEventListener('focus', f); b.addEventListener('mouseenter', f);
+  });
+  setDim(0);
+  I18N.on(function () { setDim(dim); });
+})();
+</script>
+</body>
+</html>

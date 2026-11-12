@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232E1C14'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23E0A43A'/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>قِشر — محمصة قهوة مختصّة (مفهوم)</title>
+<meta name="description" content="قِشر: محمصة صغيرة لقهوة مختصّة. مفهوم تصميمي ذاتي من made by r.&lrm; — علامة خيالية.">
+<meta name="theme-color" content="#EAD7B7">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rakkas&family=Tajawal:wght@400;500;700&family=Fraunces:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+<div class="ribbon"><div class="w"><span data-i18n="ribbon">مفهوم ذاتي من made by r.&lrm; — «قِشر» علامة خيالية، وليست عميلًا حقيقيًا. لا يوجد بيع أو دفع فعلي.</span><span style="display:flex;gap:16px"><a href="../../work/qishr/index.html" data-i18n="about">عن هذا المشروع</a><a href="../../index.html#collection" data-i18n="backMbr">العودة إلى made by r.&lrm;</a></span></div></div>
+<header class="hd" id="hd">
+<div class="w">
+<a class="logo" href="#main" aria-label="قِشر"><b>قِشر</b><i>QISHR</i></a>
+<nav class="nav" data-i18n-attr="aria-label:navL" aria-label="التنقل"><a href="#beans" data-i18n="nBeans">البنّ</a><a href="#process" data-i18n="nRoast">المحمصة</a><a href="#brew" data-i18n="nBrew">التحضير</a><a href="#subscribe" data-i18n="nSub">الاشتراك</a><a href="#cafe" data-i18n="nCafe">المقهى</a></nav>
+<div class="hd-end">
+<div class="lang" role="group" aria-label="اللغة / Language"><button type="button" data-set-lang="ar" lang="ar" aria-pressed="true">عربي</button><button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button></div>
+<button type="button" class="pill" id="openBag" aria-controls="bag"><span class="lbl" data-i18n="order">طلبك</span><span class="count" id="count">0</span></button>
+<button type="button" class="pill menu-btn" id="openMenu" aria-expanded="false" aria-controls="mnav" data-i18n-attr="aria-label:menu" aria-label="القائمة"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div>
+</div>
+</header>
+<nav class="mnav" id="mnav" hidden data-i18n-attr="aria-label:menu" aria-label="القائمة">
+<div style="display:flex;align-items:center;justify-content:space-between;min-height:56px"><span class="logo"><b style="color:var(--crema)">قِشر</b></span><button type="button" class="pill" id="closeMenu" style="border-color:var(--crema)" data-i18n-attr="aria-label:close" aria-label="إغلاق"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+<a href="#beans" data-i18n="nBeans">البنّ</a><a href="#process" data-i18n="nRoast">المحمصة</a><a href="#brew" data-i18n="nBrew">التحضير</a><a href="#subscribe" data-i18n="nSub">الاشتراك</a><a href="#cafe" data-i18n="nCafe">المقهى</a>
+<div class="lang" role="group" aria-label="اللغة / Language" style="border-color:var(--crema);align-self:flex-start;margin-top:20px"><button type="button" data-set-lang="ar" lang="ar" aria-pressed="true" style="color:inherit">عربي</button><button type="button" data-set-lang="en" lang="en" aria-pressed="false" style="color:inherit">EN</button></div>
+</nav>
+
+<main id="main">
+<section class="w hero" aria-labelledby="h1">
+<div class="txt" style="display:flex;flex-direction:column;align-items:flex-start;gap:22px">
+<p class="eyebrow" data-i18n="heroEy">محمصة صغيرة · قهوة مختصّة</p>
+<h1 id="h1" data-i18n="h1" data-i18n-html="">كل فنجان<br>له أصل.</h1>
+<p class="lead" data-i18n="heroP">نحمّص البنّ بكميات صغيرة كل أسبوع، ونرسله لك طازجًا مع بطاقة تحكي من أين جاء.</p>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px"><a class="btn" href="#beans" data-i18n="heroCta">اختر بنّك</a><a class="lnk" href="#subscribe" data-i18n="heroSub">اشترك شهريًا</a></div>
+</div>
+<div class="cupwrap">
+<svg class="cup" id="cup" viewBox="-260 -260 520 520" role="img" data-i18n-attr="aria-label:cupLabel" aria-label="فنجان قهوة من الأعلى. اسحب داخل الفنجان لتحريك الكريما.">
+<defs><path id="rim" d="M 0 -224 A 224 224 0 1 1 -0.01 -224"/></defs>
+<circle r="252" fill="#F3E6CF" stroke="#2E1C14" stroke-width="2"/>
+<circle r="206" fill="none" stroke="#D8C29E" stroke-width="1.5"/>
+<text font-family="Fraunces, serif" font-weight="600" font-size="14" letter-spacing="3" fill="#2E1C14" direction="ltr" style="direction:ltr;unicode-bidi:isolate"><textPath href="#rim" id="rimText">QISHR · ETHIOPIA · SPECIALTY COFFEE · SMALL-BATCH ROASTERY · QISHR · ETHIOPIA · SPECIALTY COFFEE · SMALL-BATCH ROASTERY ·</textPath></text>
+<rect x="138" y="-34" width="96" height="68" rx="34" fill="none" stroke="#FBF3E4" stroke-width="20"/>
+<rect x="138" y="-34" width="96" height="68" rx="34" fill="none" stroke="#2E1C14" stroke-width="1.5"/>
+<circle r="172" fill="#FBF3E4" stroke="#2E1C14" stroke-width="2"/>
+<circle class="coffee" id="coffee" r="142" fill="#6B3F22"/>
+<circle class="coffee" id="crema" r="133" fill="none" stroke="#C9965F" stroke-width="18" opacity=".85"/>
+<g class="swirl" id="swirl" style="transform:rotate(-20deg)"><path d="M0 -92 C 72 -92, 104 -18, 52 32 C 12 72, -62 52, -56 2 C -50 -40, 2 -46, 12 -10" fill="none" stroke="#F3E6CF" stroke-width="15" stroke-linecap="round"/><circle cx="12" cy="-10" r="9" fill="#F3E6CF"/></g>
+</svg>
+<span style="font-size:15px;color:var(--soft)" data-i18n="stir">اسحب داخل الفنجان لتحريك الكريما</span>
+</div>
+<div class="origins" role="group" data-i18n-attr="aria-label:chooseOrigin" aria-label="اختر الأصل">
+<span style="font-weight:700" data-i18n="chooseOrigin">اختر الأصل</span>
+<button type="button" class="origin" data-o="0" aria-pressed="true"><span style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span class="nm" data-i18n="o0">إثيوبيا</span><span style="font-size:14px" data-i18n="o0r">يرغاتشيفي</span></span><span style="display:flex;flex-wrap:wrap;gap:6px"><span class="note" data-i18n="n01">ياسمين</span><span class="note" data-i18n="n02">برغموت</span><span class="note" data-i18n="n03">عسل</span></span></button>
+<button type="button" class="origin" data-o="1" aria-pressed="false"><span style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span class="nm" data-i18n="o1">كولومبيا</span><span style="font-size:14px" data-i18n="o1r">هويلا</span></span><span style="display:flex;flex-wrap:wrap;gap:6px"><span class="note" data-i18n="n11">كراميل</span><span class="note" data-i18n="n12">تفاح أحمر</span><span class="note" data-i18n="n13">شوكولاتة</span></span></button>
+<button type="button" class="origin" data-o="2" aria-pressed="false"><span style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span class="nm" data-i18n="o2">اليمن</span><span style="font-size:14px" data-i18n="o2r">حراز</span></span><span style="display:flex;flex-wrap:wrap;gap:6px"><span class="note" data-i18n="n21">زبيب</span><span class="note" data-i18n="n22">هيل</span><span class="note" data-i18n="n23">كاكاو</span></span></button>
+</div>
+</section>
+<div class="strip"><div class="w"><span data-i18n="f1">حبوب كاملة أو مطحونة حسب أداتك</span><span aria-hidden="true">●</span><span data-i18n="f2">تحميص كل أسبوع</span><span aria-hidden="true">●</span><span data-i18n="f3">اشتراك تستطيع إيقافه متى شئت</span></div></div>
+
+<section id="beans" class="dark sec" aria-labelledby="beans-h">
+<div class="w">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:20px 64px;align-items:end;margin-bottom:28px">
+<div style="display:flex;flex-direction:column;gap:12px"><p class="eyebrow" data-i18n="bEy">محصول هذا الشهر</p><h2 class="h2" id="beans-h" data-i18n="bH">ثلاثة أصول، ثلاث حكايات.</h2></div>
+<p class="lead" data-i18n="bP">اختر الحجم وطريقة الطحن، ونجهّز طلبك بعد التحميص مباشرة. الأسعار هنا توضيحية لهذا المفهوم.</p>
+</div>
+<div id="beanList">
+<article class="bean" data-bean="0" data-p250="79" data-p1000="279">
+<div class="bag" aria-hidden="true"><span class="fold" style="background:#C9965F"></span><span class="body" style="background:#C9965F"></span><span class="lab"><span>QISHR · 250G</span><b>إثيوبيا</b><span>YIRGACHEFFE</span></span></div>
+<div>
+<h3 data-i18n="o0">إثيوبيا</h3>
+<p class="lead" style="color:#D9C3A0" data-i18n="b0p">قهوة زهرية مشرقة، فيها ياسمين وبرغموت وحلاوة عسل. مثالية للتقطير.</p>
+<dl class="facts"><div><dt data-i18n="region">المنطقة</dt><dd data-i18n="o0r">يرغاتشيفي</dd></div><div><dt data-i18n="process">المعالجة</dt><dd data-i18n="washed">مغسولة</dd></div><div><dt data-i18n="roastL">التحميص</dt><dd data-i18n="light">فاتح</dd></div></dl>
+<div class="opts">
+<div class="sel"><span data-i18n="size">الحجم</span><div class="seg" role="group" data-i18n-attr="aria-label:size" aria-label="الحجم"><button type="button" data-size="250" aria-pressed="true" data-i18n="g250">250 غ</button><button type="button" data-size="1000" aria-pressed="false" data-i18n="g1000">1 كغ</button></div></div>
+<label class="sel"><span data-i18n="grind">الطحن</span><select data-grind><option value="whole" data-i18n="gWhole">حبوب كاملة</option><option value="filter" data-i18n="gFilter">للتقطير</option><option value="espresso" data-i18n="gEsp">للإسبريسو</option><option value="saudi" data-i18n="gSaudi">للقهوة السعودية</option></select></label>
+<span class="price"><span data-price>79</span> <small data-i18n="sar">ر.س</small></span>
+<button type="button" class="btn" data-add data-i18n="add">أضف للطلب</button>
+</div>
+</div>
+</article>
+<article class="bean" data-bean="1" data-p250="69" data-p1000="239">
+<div class="bag" aria-hidden="true"><span class="fold" style="background:#B5583A"></span><span class="body" style="background:#B5583A"></span><span class="lab"><span>QISHR · 250G</span><b>كولومبيا</b><span>HUILA</span></span></div>
+<div>
+<h3 data-i18n="o1">كولومبيا</h3>
+<p class="lead" style="color:#D9C3A0" data-i18n="b1p">متوازنة ومريحة، بحلاوة الكراميل ولمسة تفاح أحمر. تصلح لكل الأدوات.</p>
+<dl class="facts"><div><dt data-i18n="region">المنطقة</dt><dd data-i18n="o1r">هويلا</dd></div><div><dt data-i18n="process">المعالجة</dt><dd data-i18n="washed">مغسولة</dd></div><div><dt data-i18n="roastL">التحميص</dt><dd data-i18n="medium">متوسط</dd></div></dl>
+<div class="opts">
+<div class="sel"><span data-i18n="size">الحجم</span><div class="seg" role="group" data-i18n-attr="aria-label:size" aria-label="الحجم"><button type="button" data-size="250" aria-pressed="true" data-i18n="g250">250 غ</button><button type="button" data-size="1000" aria-pressed="false" data-i18n="g1000">1 كغ</button></div></div>
+<label class="sel"><span data-i18n="grind">الطحن</span><select data-grind><option value="whole" data-i18n="gWhole">حبوب كاملة</option><option value="filter" data-i18n="gFilter">للتقطير</option><option value="espresso" data-i18n="gEsp">للإسبريسو</option><option value="saudi" data-i18n="gSaudi">للقهوة السعودية</option></select></label>
+<span class="price"><span data-price>69</span> <small data-i18n="sar">ر.س</small></span>
+<button type="button" class="btn" data-add data-i18n="add">أضف للطلب</button>
+</div>
+</div>
+</article>
+<article class="bean" data-bean="2" data-p250="119" data-p1000="429">
+<div class="bag" aria-hidden="true"><span class="fold" style="background:#6F8048"></span><span class="body" style="background:#6F8048"></span><span class="lab"><span>QISHR · 250G</span><b>اليمن</b><span>HARAZ</span></span></div>
+<div>
+<h3 data-i18n="o2">اليمن</h3>
+<p class="lead" style="color:#D9C3A0" data-i18n="b2p">قهوة الجبال القديمة: زبيب وهيل وكاكاو، بجسم كثيف وطعم طويل.</p>
+<dl class="facts"><div><dt data-i18n="region">المنطقة</dt><dd data-i18n="o2r">حراز</dd></div><div><dt data-i18n="process">المعالجة</dt><dd data-i18n="natural">مجففة طبيعيًا</dd></div><div><dt data-i18n="roastL">التحميص</dt><dd data-i18n="medDark">متوسط داكن</dd></div></dl>
+<div class="opts">
+<div class="sel"><span data-i18n="size">الحجم</span><div class="seg" role="group" data-i18n-attr="aria-label:size" aria-label="الحجم"><button type="button" data-size="250" aria-pressed="true" data-i18n="g250">250 غ</button><button type="button" data-size="1000" aria-pressed="false" data-i18n="g1000">1 كغ</button></div></div>
+<label class="sel"><span data-i18n="grind">الطحن</span><select data-grind><option value="whole" data-i18n="gWhole">حبوب كاملة</option><option value="filter" data-i18n="gFilter">للتقطير</option><option value="espresso" data-i18n="gEsp">للإسبريسو</option><option value="saudi" data-i18n="gSaudi">للقهوة السعودية</option></select></label>
+<span class="price"><span data-price>119</span> <small data-i18n="sar">ر.س</small></span>
+<button type="button" class="btn" data-add data-i18n="add">أضف للطلب</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="process" class="sec" aria-labelledby="pr-h">
+<div class="w">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:820px"><p class="eyebrow" data-i18n="pEy">المحمصة</p><h2 class="h2" id="pr-h" data-i18n="pH">من الحبّة إلى الفنجان.</h2><p class="lead" data-i18n="pP">نحمّص كل أصل بمنحنى حرارة خاص به، ثم نتركه يرتاح قبل أن يصلك.</p></div>
+<svg class="curve" id="curve" viewBox="0 0 1200 260" role="img" data-i18n-attr="aria-label:curveLabel" aria-label="رسم توضيحي لمنحنى التحميص عبر أربع مراحل"><g stroke="#2E1C14" stroke-opacity=".25" stroke-width="1"><path d="M0 230 H1200"/><path d="M300 20 V230 M600 20 V230 M900 20 V230" stroke-dasharray="4 6"/></g><path class="ln" d="M0 210 C 120 200, 200 120, 300 110 S 520 70, 600 62 S 820 40, 900 36 C 980 34, 1040 120, 1200 200"/><g font-family="Tajawal, sans-serif" font-size="15" fill="#5C4A3A"><text x="150" y="252" text-anchor="middle" data-i18n="ph1">التجفيف</text><text x="450" y="252" text-anchor="middle" data-i18n="ph2">التحميص</text><text x="750" y="252" text-anchor="middle" data-i18n="ph3">الفرقعة الأولى</text><text x="1050" y="252" text-anchor="middle" data-i18n="ph4">التبريد</text></g></svg>
+<ol class="steps" style="padding:0">
+<li><b>١</b><h3 data-i18n="s1h">نختار</h3><p data-i18n="s1p">نتذوّق عيّنات من مزارع صغيرة، ونختار ما يستحق أن يُحمَّص.</p></li>
+<li><b>٢</b><h3 data-i18n="s2h">نحمّص</h3><p data-i18n="s2p">كميات صغيرة، ومنحنى حرارة يناسب كل أصل.</p></li>
+<li><b>٣</b><h3 data-i18n="s3h">نُريح</h3><p data-i18n="s3p">يرتاح البنّ أيامًا قليلة حتى تستقر نكهته.</p></li>
+<li><b>٤</b><h3 data-i18n="s4h">نرسل</h3><p data-i18n="s4p">يصلك مع بطاقة الأصل وتاريخ التحميص.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="brew" class="sec" style="padding-top:0" aria-labelledby="br-h">
+<div class="w">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:820px"><p class="eyebrow" data-i18n="brEy">دليل التحضير</p><h2 class="h2" id="br-h" data-i18n="brH">حضّرها كما تحب.</h2></div>
+<div class="tabs" role="tablist" data-i18n-attr="aria-label:brEy" aria-label="دليل التحضير">
+<button type="button" class="tab" role="tab" id="t-v60" aria-selected="true" aria-controls="brewPanel" data-m="v60" data-i18n="mV60">تقطير V60</button>
+<button type="button" class="tab" role="tab" id="t-esp" aria-selected="false" aria-controls="brewPanel" data-m="esp" tabindex="-1" data-i18n="mEsp">إسبريسو</button>
+<button type="button" class="tab" role="tab" id="t-saudi" aria-selected="false" aria-controls="brewPanel" data-m="saudi" tabindex="-1" data-i18n="mSaudi">قهوة سعودية</button>
+<button type="button" class="tab" role="tab" id="t-press" aria-selected="false" aria-controls="brewPanel" data-m="press" tabindex="-1" data-i18n="mPress">فرنش برس</button>
+</div>
+<div class="brew" id="brewPanel" role="tabpanel" aria-labelledby="t-v60">
+<div>
+<dl class="stat"><div><dt data-i18n="kCoffee">البنّ</dt><dd id="bCoffee">15 غ</dd></div><div><dt data-i18n="kWater">الماء</dt><dd id="bWater">250 مل</dd></div><div><dt data-i18n="kTemp">الحرارة</dt><dd id="bTemp">93°</dd></div><div><dt data-i18n="kTime">الوقت</dt><dd id="bTime">3:00</dd></div></dl>
+<div class="stepper" role="group" data-i18n-attr="aria-label:cupsL" aria-label="عدد الأكواب"><button type="button" id="cupsMinus" data-i18n-attr="aria-label:less" aria-label="أقل">−</button><output id="cups" aria-live="polite">1</output><button type="button" id="cupsPlus" data-i18n-attr="aria-label:more" aria-label="أكثر">+</button></div>
+<p style="margin:14px 0 0;font-size:15px;color:var(--soft)"><span data-i18n="grindFor">الطحن:</span> <b id="bGrind">متوسط ناعم</b></p>
+</div>
+<ol class="howto" id="bSteps"></ol>
+</div>
+</div>
+</section>
+
+<section id="subscribe" class="dark sec" aria-labelledby="sb-h">
+<div class="w">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:820px"><p class="eyebrow" data-i18n="sEy">الاشتراك</p><h2 class="h2" id="sb-h" data-i18n="sH">بنّ طازج، دون أن تتذكّر.</h2><p class="lead" data-i18n="sP">صمّم اشتراكك، واعرف تكلفته قبل أن تقرّر. خصم ١٠٪ على كل شحنة.</p></div>
+<form class="sub" id="subForm">
+<div>
+<fieldset class="q"><legend data-i18n="qFreq">كل كم تريد شحنة؟</legend><div class="chips"><label><input type="radio" name="freq" value="2" checked><span data-i18n="every2">كل أسبوعين</span></label><label><input type="radio" name="freq" value="1"><span data-i18n="every1">كل شهر</span></label></div></fieldset>
+<fieldset class="q"><legend data-i18n="qBags">كم كيسًا في كل شحنة؟ (250 غ)</legend><div class="chips"><label><input type="radio" name="bags" value="1" checked><span>1</span></label><label><input type="radio" name="bags" value="2"><span>2</span></label><label><input type="radio" name="bags" value="3"><span>3</span></label></div></fieldset>
+<fieldset class="q"><legend data-i18n="qWhich">أي بنّ؟</legend><div class="chips"><label><input type="radio" name="which" value="rot" checked><span data-i18n="rotate">محصول الشهر بالتناوب</span></label><label><input type="radio" name="which" value="0"><span data-i18n="o0">إثيوبيا</span></label><label><input type="radio" name="which" value="1"><span data-i18n="o1">كولومبيا</span></label><label><input type="radio" name="which" value="2"><span data-i18n="o2">اليمن</span></label></div></fieldset>
+</div>
+<aside class="sum" aria-live="polite">
+<span style="font-weight:700" data-i18n="sumH">ملخّص اشتراكك</span>
+<div class="row"><span data-i18n="perShip">في كل شحنة</span><b id="sumShip">—</b></div>
+<div class="row"><span data-i18n="perMonth">شحنات في الشهر</span><b id="sumCount">—</b></div>
+<div><span style="font-size:14px" data-i18n="monthly">التكلفة الشهرية التقديرية</span><div class="big"><span id="sumTotal">—</span> <small style="font-size:18px" data-i18n="sar">ر.س</small></div></div>
+<button type="submit" class="btn dk" data-i18n="startSub">ابدأ الاشتراك</button>
+<span style="font-size:13px;color:var(--soft)" data-i18n="sumNote">أسعار توضيحية لمفهوم تصميمي.</span>
+</aside>
+</form>
+</div>
+</section>
+
+<section id="cafe" class="sec" aria-labelledby="cf-h">
+<div class="w cafe">
+<div>
+<p class="eyebrow" data-i18n="cEy">المقهى</p>
+<h2 class="h2" id="cf-h" style="margin-top:12px" data-i18n="cH">تعال تذوّق المحصول الجديد.</h2>
+<p class="lead" style="margin-top:18px" data-i18n="cP">مقهى صغير بجانب المحمصة. كل خميس نفتح جلسة تذوّق مجانية للمحصول الجديد.</p>
+<dl class="hours"><div><dt data-i18n="days1">السبت – الأربعاء</dt><dd>7:00 – 23:00</dd></div><div><dt data-i18n="days2">الخميس – الجمعة</dt><dd>8:00 – 01:00</dd></div><div><dt data-i18n="tasting">جلسة التذوّق</dt><dd data-i18n="tastingT">الخميس 19:00</dd></div></dl>
+<p style="margin:14px 0 0;font-size:14px;color:var(--soft)" data-i18n="addr">العنوان: [عنوان توضيحي] — المقهى خيالي ضمن هذا المفهوم.</p>
+</div>
+<svg viewBox="0 0 520 420" role="img" data-i18n-attr="aria-label:mapLabel" aria-label="خريطة توضيحية لموقع المقهى" style="width:100%;height:auto"><rect width="520" height="420" rx="28" fill="#F3E6CF" stroke="#2E1C14" stroke-width="1.5"/><g stroke="#D8C29E" stroke-width="14" stroke-linecap="round" fill="none"><path d="M-10 120 C 140 140, 300 90, 530 130"/><path d="M160 -10 C 170 140, 140 280, 190 430"/><path d="M-10 300 C 160 290, 320 330, 530 290"/><path d="M380 -10 C 360 120, 400 260, 360 430"/></g><g stroke="#E2CBA4" stroke-width="6" fill="none"><path d="M-10 200 H530"/><path d="M270 -10 V430"/></g><circle cx="300" cy="210" r="46" fill="#E0A43A" opacity=".35"/><path d="M300 236 C 280 212, 268 196, 268 180 a32 32 0 0 1 64 0 c0 16 -12 32 -32 56z" fill="#2E1C14"/><circle cx="300" cy="180" r="11" fill="#E0A43A"/></svg>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="fq-h">
+<div class="w" style="max-width:1000px">
+<h2 class="h2" id="fq-h" style="font-size:clamp(36px,4vw,56px);margin-bottom:28px" data-i18n="fqH">أسئلة متكررة</h2>
+<div class="faq">
+<details><summary data-i18n="q1">متى يُشحن طلبي؟</summary><p data-i18n="a1">نحمّص في بداية كل أسبوع، ونشحن الطلبات بعد التحميص مباشرة.</p></details>
+<details><summary data-i18n="q2">ما الطحن المناسب لي؟</summary><p data-i18n="a2">إن لم تكن متأكدًا، اختر «حبوب كاملة» واطحنها قبل التحضير؛ أو استخدم دليل التحضير أعلاه.</p></details>
+<details><summary data-i18n="q3">هل أستطيع إيقاف الاشتراك؟</summary><p data-i18n="a3">نعم، في أي وقت ومن حسابك، دون رسوم.</p></details>
+<details><summary data-i18n="q4">هل هذا متجر حقيقي؟</summary><p data-i18n="a4">لا. «قِشر» مفهوم تصميمي من made by r.، والأسعار والمقهى توضيحية، ولا يتم بيع أو دفع فعلي.</p></details>
+</div>
+</div>
+</section>
+
+<section class="dark sec" aria-labelledby="nl-h">
+<div class="w" style="max-width:900px">
+<h2 class="h2" id="nl-h" style="font-size:clamp(36px,4.4vw,64px)" data-i18n="nlH">خبر المحصول القادم أولًا.</h2>
+<form class="news" id="news" novalidate><label class="sr" for="nlMail" data-i18n="email">البريد الإلكتروني</label><input id="nlMail" type="email" autocomplete="email" dir="ltr" data-i18n-attr="placeholder:emailPh" placeholder="بريدك الإلكتروني"><button type="submit" class="btn" data-i18n="join">اشترك في النشرة</button></form>
+<p class="msg" id="nlMsg" role="status"></p>
+</div>
+</section>
+</main>
+<footer class="ft"><div class="w"><span class="logo"><b style="font-size:28px">قِشر</b><i>QISHR</i></span><span data-i18n="ftNote">مفهوم ذاتي من made by r.&lrm; — علامة خيالية.</span><a href="../../work/qishr/index.html" data-i18n="about">عن هذا المشروع</a></div></footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="bag" role="dialog" aria-modal="true" aria-labelledby="bagH" hidden>
+<header><h2 id="bagH" data-i18n="order">طلبك</h2><button type="button" class="x" id="closeBag" data-i18n-attr="aria-label:close" aria-label="إغلاق">✕</button></header>
+<ul class="items" id="items"></ul>
+<footer>
+<div style="display:flex;justify-content:space-between;font-weight:700;font-size:20px"><span data-i18n="subtotal">المجموع</span><span><span id="subtotal">0</span> <span data-i18n="sar">ر.س</span></span></div>
+<p class="notice" data-i18n="noCheckout">هذا موقع مفهوم: الدفع غير متاح، ولن يُنفَّذ أي طلب.</p>
+<button type="button" class="btn" disabled data-i18n="checkout">إتمام الطلب غير متاح</button>
+</footer>
+</aside>
+<dialog id="dlg"><h2 data-i18n="dlgH">شكرًا لاهتمامك</h2><p data-i18n="dlgP">«قِشر» مفهوم تصميمي، فلا يوجد اشتراك أو دفع حقيقي. صمّمنا هذه الخطوة لتُظهر كيف ستعمل.</p><form method="dialog"><button class="btn dk" data-i18n="ok">حسنًا</button></form></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230C0D0F'/%3E%3Crect x='6' y='14' width='20' height='5' fill='%23D7FF3C'/%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خط — ملعب للحروف المتغيّرة (مفهوم)</title>
+<meta name="description" content="خط: أداة ويب خيالية لتشكيل الحروف المتغيّرة وتحريكها بالعربية واللاتينية. مفهوم تصميمي ذاتي من made by r.&lrm; — ليس منتجًا حقيقيًا.">
+<meta name="theme-color" content="#0C0D0F">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELGR,ELSH@100..900,1..2,0..16&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+<div class="ribbon"><div class="w"><span data-i18n="ribbon">مفهوم ذاتي من made by r.&lrm; — «خط» منتج خيالي، وليس عميلًا حقيقيًا. لا يوجد اشتراك أو دفع فعلي.</span><span style="display:flex;gap:18px"><a href="../../work/khatt/index.html" data-i18n="about">عن هذا المشروع</a><a href="../../index.html#collection" data-i18n="backMbr">العودة إلى made by r.&lrm;</a></span></div></div>
+<header class="hd">
+<div class="w">
+<a class="logo" href="#main" aria-label="خط — KHATT"><b>خط</b><i>KHATT</i></a>
+<nav class="nav" data-i18n-attr="aria-label:navL" aria-label="التنقل"><a href="#play" data-i18n="nPlay">الملعب</a><a href="#features" data-i18n="nFeat">المزايا</a><a href="#how" data-i18n="nHow">كيف يعمل</a><a href="#gallery" data-i18n="nGal">المعرض</a><a href="#pricing" data-i18n="nPrice">الأسعار</a></nav>
+<div class="end">
+<div class="lang" role="group" aria-label="اللغة / Language"><button type="button" data-set-lang="ar" lang="ar" aria-pressed="true">عربي</button><button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button></div>
+<a class="btn" href="#waitlist" data-i18n="join">قائمة الانتظار</a>
+<button type="button" class="ghost menu-btn" id="openMenu" aria-expanded="false" aria-controls="mnav" data-i18n-attr="aria-label:menu" aria-label="القائمة"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg></button>
+</div>
+</div>
+</header>
+<nav class="mnav" id="mnav" hidden data-i18n-attr="aria-label:menu" aria-label="القائمة">
+<div style="display:flex;justify-content:space-between;align-items:center;min-height:56px"><span class="logo"><b>خط</b><i>KHATT</i></span><button type="button" class="ghost" id="closeMenu" data-i18n-attr="aria-label:close" aria-label="إغلاق">✕</button></div>
+<a href="#play" data-i18n="nPlay">الملعب</a><a href="#features" data-i18n="nFeat">المزايا</a><a href="#how" data-i18n="nHow">كيف يعمل</a><a href="#gallery" data-i18n="nGal">المعرض</a><a href="#pricing" data-i18n="nPrice">الأسعار</a><a href="#waitlist" data-i18n="join">قائمة الانتظار</a>
+<div class="lang" role="group" aria-label="اللغة / Language" style="align-self:flex-start;margin-top:22px"><button type="button" data-set-lang="ar" lang="ar" aria-pressed="true">عربي</button><button type="button" data-set-lang="en" lang="en" aria-pressed="false">EN</button></div>
+</nav>
+
+<main id="main">
+<section id="play" aria-labelledby="h1">
+<div class="w hero-top">
+<div><p class="ey" data-i18n="heroEy">KHATT · أداة حروف متغيّرة · مفهوم</p><h1 id="h1" data-i18n="h1" data-i18n-html="">حروف عربية<br>تتحرّك معك.</h1></div>
+<p class="lead" data-i18n="lead">«خط» أداة ويب لتشكيل الحروف المتغيّرة وتحريكها. حرّك المؤشر فوق المسرح: الاتجاه الأفقي يغيّر الوزن، والعمودي يغيّر شكل العناصر التي يُبنى منها الحرف.</p>
+</div>
+<div class="stage" id="stage" role="img" data-i18n-attr="aria-label:stageL" aria-label="مسرح تفاعلي يعرض الكلمة بالإعدادات الحالية">
+<div class="ruler rx" aria-hidden="true"><span><b>wght</b> 100</span><span>300</span><span>500</span><span>700</span><span>900</span></div>
+<div class="ruler corner" aria-hidden="true"><b>ELSH</b></div>
+<div class="ruler ry" aria-hidden="true"><span>0</span><span>4</span><span>8</span><span>12</span><span>16</span></div>
+<div class="cross" aria-hidden="true"><span class="cx"></span><span class="cy"></span></div>
+<p class="word" aria-hidden="true"><span id="word" dir="auto">خط</span></p>
+<span class="tag hint" id="hint" aria-hidden="true">حرّك المؤشر · اضغط للتثبيت</span>
+<span class="tag lock" id="lockTag" hidden aria-hidden="true" data-i18n="locked">مثبّت · اضغط للفك</span>
+</div>
+<div class="w console">
+<div>
+<div class="field"><label class="lbl" for="wordIn" data-i18n="wordL">اكتب كلمة (حتى ١٤ حرفًا)</label><input id="wordIn" maxlength="14" autocomplete="off" spellcheck="false" dir="auto" value="خط"></div>
+<div class="presets" role="group" data-i18n-attr="aria-label:presetsL" aria-label="إعدادات جاهزة"><button type="button" class="chip" data-preset="heavy" aria-pressed="false" data-i18n="pHeavy">ثقيل</button><button type="button" class="chip" data-preset="light" aria-pressed="false" data-i18n="pLight">خفيف</button><button type="button" class="chip" data-preset="wide" aria-pressed="false" data-i18n="pWide">شبكة واسعة</button><button type="button" class="chip" data-preset="random" data-i18n="pRandom">عشوائي</button></div>
+</div>
+<div>
+<span class="lbl" id="padLbl" data-i18n="padTitle">لوحة المحاور</span>
+<div class="pad" id="pad" tabindex="0" role="group" aria-labelledby="padLbl" aria-describedby="padHelp tele"><span class="knob" aria-hidden="true"></span></div>
+<div class="pad-l" aria-hidden="true"><span>wght −</span><span>wght +</span></div>
+<p class="sr" id="padHelp" data-i18n="padHelp">استخدم الأسهم: يمين ويسار للوزن، وأعلى وأسفل للشكل. اضغط Shift لخطوات أكبر.</p>
+</div>
+<div class="tele-wrap">
+<dl class="tele" id="tele">
+<dt data-i18n="tW">الوزن</dt><dd class="bar" id="bW" aria-hidden="true"><i></i></dd><dd class="v" id="vW">560</dd>
+<dt data-i18n="tG">الشبكة</dt><dd class="bar" id="bG" aria-hidden="true"><i></i></dd><dd class="v" id="vG">1.2</dd>
+<dt data-i18n="tS">الشكل</dt><dd class="bar" id="bS" aria-hidden="true"><i></i></dd><dd class="v" id="vS">3.0</dd>
+</dl>
+<div class="actions"><button type="button" class="btn" data-copy data-i18n="copyCss">انسخ CSS</button><button type="button" class="ghost" id="reset" data-i18n="reset">إعادة الضبط</button></div>
+<p class="status" id="copyMsg" role="status"></p>
+</div>
+</div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track"><span>خط</span><span>KHATT</span><span>٣ محاور</span><span>3 AXES</span><span>عربي + لاتيني</span><span>ARABIC + LATIN</span><span>بلا تثبيت</span><span>NO INSTALL</span><span>خط</span><span>KHATT</span><span>٣ محاور</span><span>3 AXES</span><span>عربي + لاتيني</span><span>ARABIC + LATIN</span><span>بلا تثبيت</span><span>NO INSTALL</span></div></div>
+
+<section id="features" class="sec" aria-labelledby="f-h">
+<div class="w">
+<div class="head"><div><p class="ey" data-i18n="fEy">المزايا</p><h2 class="h2" id="f-h" style="margin-top:12px" data-i18n="fH">ثلاث أدوات، وحالة واحدة.</h2></div><p class="sub" data-i18n="fP">كل ما تغيّره هنا يتغيّر في الملعب أعلاه، والعكس صحيح. جرّب الأدوات مباشرة؛ كلها تعمل في متصفحك دون أي اتصال بخادم.</p></div>
+
+<article class="feat" aria-labelledby="f1-h">
+<div><span class="num">01 — AXES</span><h3 id="f1-h" data-i18n="f1h">محاور حيّة</h3><p data-i18n="f1p">ثلاثة محاور تتحكم في كل حرف: الوزن، وحجم الشبكة التي يُبنى عليها، وشكل العناصر الصغيرة التي تكوّنه.</p></div>
+<div class="panel">
+<p class="spec vf" dir="auto" aria-hidden="true">أبجد Aa</p>
+<div class="sl"><label for="sW">wght</label><input id="sW" type="range" min="100" max="900" step="1" value="560"><output id="oW" for="sW">560</output></div>
+<div class="sl"><label for="sG">ELGR</label><input id="sG" type="range" min="1" max="2" step="0.05" value="1.2"><output id="oG" for="sG">1.2</output></div>
+<div class="sl"><label for="sS">ELSH</label><input id="sS" type="range" min="0" max="16" step="0.5" value="3"><output id="oS" for="sS">3.0</output></div>
+</div>
+</article>
+
+<article class="feat" aria-labelledby="f2-h">
+<div><span class="num">02 — MOTION</span><h3 id="f2-h" data-i18n="f2h">حركة بلا كود</h3><p data-i18n="f2p">اختر إيقاعًا وشاهد الكلمات تتنفّس. الحركة تعمل على الكلمة كاملة، فتبقى الحروف العربية متصلة كما يجب.</p></div>
+<div class="panel">
+<p class="moving" id="moving" aria-hidden="true"></p>
+<div class="presets" role="group" data-i18n-attr="aria-label:motionL" aria-label="نوع الحركة" style="justify-content:center;margin:0"><button type="button" class="chip" data-motion="pulse" aria-pressed="true" data-i18n="mPulse">نبض</button><button type="button" class="chip" data-motion="wave" aria-pressed="false" data-i18n="mWave">موجة</button><button type="button" class="chip" data-motion="write" aria-pressed="false" data-i18n="mWrite">كتابة</button><button type="button" class="chip" data-motion="none" aria-pressed="false" data-i18n="mStop">إيقاف</button></div>
+<p class="rm-note" id="rmNote" hidden data-i18n="rmNote">الحركة متوقفة لأن جهازك يطلب تقليل الحركة.</p>
+</div>
+</article>
+
+<article class="feat" aria-labelledby="f3-h">
+<div><span class="num">03 — EXPORT</span><h3 id="f3-h" data-i18n="f3h">انسخ وانشر</h3><p data-i18n="f3p">كود CSS حقيقي للإعدادات الحالية، يعمل مع خط Handjet المجاني من Google Fonts. انسخه وضعه في موقعك.</p></div>
+<div class="panel">
+<pre><code id="code"></code></pre>
+<button type="button" class="btn" data-copy data-i18n="copyCss">انسخ CSS</button>
+<p class="status" id="copyMsg2" role="status"></p>
+</div>
+</article>
+</div>
+</section>
+
+<section id="how" class="sec" style="padding-top:0" aria-labelledby="h-h">
+<div class="w">
+<div class="head"><div><p class="ey" data-i18n="hEy">كيف يعمل</p><h2 class="h2" id="h-h" style="margin-top:12px" data-i18n="hH">من فكرة إلى حرف حيّ.</h2></div></div>
+<ol class="how">
+<li><span class="big" aria-hidden="true">١</span><h3 data-i18n="h1t">اكتب</h3><p data-i18n="h1p">كلمة، أو اسمًا، أو عنوانًا. بالعربية أو اللاتينية.</p></li>
+<li><span class="big" aria-hidden="true">٢</span><h3 data-i18n="h2t">حرّك</h3><p data-i18n="h2p">شكّل الحروف بالمؤشر أو باللوحة أو بالمنزلقات، وثبّت ما يعجبك.</p></li>
+<li><span class="big" aria-hidden="true">٣</span><h3 data-i18n="h3t">انسخ</h3><p data-i18n="h3p">خذ كود CSS جاهزًا لموقعك أو تطبيقك. لا ملفات، ولا تثبيت.</p></li>
+</ol>
+</div>
+</section>
+
+<section id="gallery" class="sec" style="padding-top:0" aria-labelledby="g-h">
+<div class="w">
+<div class="head"><div><p class="ey" data-i18n="gEy">المعرض</p><h2 class="h2" id="g-h" style="margin-top:12px" data-i18n="gH">جدار العيّنات.</h2></div><p class="sub" data-i18n="gP">كل عيّنة إعداد مختلف للخط نفسه. اضغط أي عيّنة لتفتحها في الملعب وتكمل منها.</p></div>
+<div class="wall" id="wall">
+<button type="button" class="tile t-a" data-word="حبر" data-w="900" data-g="1" data-s="0" style="--tf:clamp(120px,15vw,220px);--hs:4"><span class="tw" dir="auto">حبر</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2" data-word="Signal" data-w="300" data-g="1.6" data-s="5" style="--tf:64px"><span class="tw" dir="auto">Signal</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-c t-blue" data-word="٢٠٢٦" data-w="700" data-g="1" data-s="9" style="--tf:56px"><span class="tw" dir="auto">٢٠٢٦</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2 t-lime" data-word="نبض" data-w="650" data-g="1.5" data-s="7" style="--tf:80px"><span class="tw" dir="auto">نبض</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-f" data-word="مدينة" data-w="400" data-g="1.3" data-s="12" style="--tf:clamp(84px,9vw,128px);--hw:800"><span class="tw" dir="auto">مدينة</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2" data-word="Grid" data-w="800" data-g="2" data-s="0" style="--tf:76px"><span class="tw" dir="auto">Grid</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2 t-blue" data-word="صدى" data-w="500" data-g="2" data-s="2" style="--tf:80px"><span class="tw" dir="auto">صدى</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2" data-word="ضوء" data-w="150" data-g="1" data-s="3" style="--tf:80px;--hw:500"><span class="tw" dir="auto">ضوء</span><span class="tmeta"></span></button>
+<button type="button" class="tile t-2" data-word="Aa" data-w="900" data-g="1.8" data-s="14" style="--tf:84px;--hs:16"><span class="tw" dir="auto">Aa</span><span class="tmeta"></span></button>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="sec" style="padding-top:0" aria-labelledby="p-h">
+<div class="w">
+<div class="head"><div><p class="ey" data-i18n="prEy">الأسعار</p><h2 class="h2" id="p-h" style="margin-top:12px" data-i18n="prH">ابدأ مجانًا.</h2></div><p class="sub" data-i18n="prP">الأسعار هنا توضيحية لهذا المفهوم. لا يوجد اشتراك أو دفع فعلي؛ الأزرار تأخذك إلى قائمة الانتظار.</p></div>
+<div class="toggle" role="group" data-i18n-attr="aria-label:billL" aria-label="فترة الفوترة"><button type="button" data-bill="m" aria-pressed="true" data-i18n="monthly">شهري</button><button type="button" data-bill="y" aria-pressed="false" data-i18n="yearly">سنوي</button></div><span class="save" data-i18n="save">السنوي = شهران مجانًا</span>
+<div class="plans">
+<article class="plan" aria-labelledby="pl0">
+<h3 id="pl0" data-i18n="pl0">بداية</h3><p class="pd" data-i18n="pl0d">لتجربة الحروف المتغيّرة.</p>
+<div class="amt"><b data-price="0" data-m="0" data-y="0">0</b><span class="per" data-i18n="free">مجانًا للأبد</span></div>
+<ul><li data-i18n="pl0a">المحاور الثلاثة</li><li data-i18n="pl0b">نسخ CSS</li><li data-i18n="pl0c">٣ مشاريع محفوظة</li></ul>
+<a class="ghost" href="#waitlist" data-plan="start" data-i18n="choose">انضم بهذه الخطة</a>
+</article>
+<article class="plan hot" aria-labelledby="pl1">
+<h3 id="pl1" data-i18n="pl1">مبدع</h3><p class="pd" data-i18n="pl1d">لمن يصمّم كل يوم.</p>
+<div class="amt"><b data-m="29" data-y="290">29</b><span class="per">ر.س / شهر</span></div>
+<ul><li data-i18n="pl1a">كل أنواع الحركة</li><li data-i18n="pl1b">مشاريع غير محدودة</li><li data-i18n="pl1c">تصدير فيديو قصير</li></ul>
+<a class="btn" href="#waitlist" data-plan="creator" data-i18n="choose">انضم بهذه الخطة</a>
+</article>
+<article class="plan" aria-labelledby="pl2">
+<h3 id="pl2" data-i18n="pl2">استوديو</h3><p class="pd" data-i18n="pl2d">للفرق والعلامات التجارية.</p>
+<div class="amt"><b data-m="79" data-y="790">79</b><span class="per">ر.س / شهر</span></div>
+<ul><li data-i18n="pl2a">كل ما في «مبدع»</li><li data-i18n="pl2b">مساحة عمل مشتركة</li><li data-i18n="pl2c">خطوط العلامة الخاصة</li></ul>
+<a class="ghost" href="#waitlist" data-plan="studio" data-i18n="choose">انضم بهذه الخطة</a>
+</article>
+</div>
+<p class="note" data-i18n="prNote">أسعار توضيحية بالريال السعودي لمفهوم تصميمي. المزايا المذكورة جزء من الفكرة، وليست منتجًا متاحًا.</p>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="q-h">
+<div class="w">
+<h2 class="h2" id="q-h" style="margin-bottom:32px" data-i18n="qH">أسئلة متكررة</h2>
+<div class="faq">
+<details><summary data-i18n="q1">هل «خط» أداة حقيقية؟</summary><p data-i18n="a1">لا. «خط» مفهوم تصميمي من made by r.&lrm;، لكن الملعب في هذه الصفحة يعمل فعلًا في متصفحك، وكود CSS المنسوخ حقيقي.</p></details>
+<details><summary data-i18n="q2">ما الخط المستخدم؟</summary><p data-i18n="a2">خط Handjet المفتوح المصدر من Google Fonts. يدعم العربية واللاتينية، وله ثلاثة محاور: الوزن، وحجم الشبكة، وشكل العناصر.</p></details>
+<details><summary data-i18n="q3">هل يرسل الملعب أي بيانات؟</summary><p data-i18n="a3">لا. كل شيء يحدث داخل الصفحة، ولا تُحفظ الكلمات أو تُرسل إلى أي مكان.</p></details>
+<details><summary data-i18n="q4">لماذا تبدو الحروف مختلفة على جهازي؟</summary><p data-i18n="a4">إذا لم يُحمَّل خط Handjet (بسبب الاتصال مثلًا)، يعرض المتصفح خطًا بديلًا لا يدعم المحاور، فلن ترى تغيّر الشكل.</p></details>
+</div>
+</div>
+</section>
+
+<section id="waitlist" class="sec wl" aria-labelledby="w-h">
+<div class="w">
+<p class="ey" data-i18n="wlEy">قائمة الانتظار</p>
+<h2 class="h2" id="w-h" style="margin-top:12px" data-i18n="wlH">كن أول من يجرّب.</h2>
+<form id="wlForm" novalidate>
+<div><label class="lbl" for="wlMail" data-i18n="email">البريد الإلكتروني</label><input id="wlMail" type="email" autocomplete="email" dir="ltr" data-i18n-attr="placeholder:emailPh" placeholder="بريدك الإلكتروني" aria-describedby="wlMsg"></div>
+<div><label class="lbl" for="wlPlan" data-i18n="planL">الخطة التي تهمّك</label><select id="wlPlan"><option value="start" data-i18n="pl0">بداية</option><option value="creator" selected data-i18n="pl1">مبدع</option><option value="studio" data-i18n="pl2">استوديو</option></select></div>
+<div style="align-self:end"><button type="submit" class="btn" data-i18n="wlBtn">سجّلني</button></div>
+</form>
+<p class="msg" id="wlMsg" role="status"></p>
+</div>
+</section>
+</main>
+<footer class="ft"><div class="w"><span class="logo"><b style="font-size:32px">خط</b><i>KHATT</i></span><span data-i18n="ftNote">مفهوم ذاتي من made by r.&lrm; — منتج خيالي. الحروف بخط Handjet (Google Fonts).</span><a href="../../work/khatt/index.html" data-i18n="about">عن هذا المشروع</a></div></footer>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
